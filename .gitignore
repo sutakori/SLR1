@@ -1,0 +1,6 @@
+lexer/*.o
+lexer/TAGS
+lexer/test/test
+parser/TAGS
+parser/*.o
+parser/test/test

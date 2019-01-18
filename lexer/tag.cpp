@@ -1,0 +1,96 @@
+#include <string>
+
+#include "tag.h"
+using std::string;
+
+string get_tag_name(Tag tag) {
+  switch (tag) {
+  case Tag::ERR: return "ERR";
+  case Tag::ID: return "ID";
+  case Tag::SPACE: return "SPACE";
+  case Tag::COMMENT: return "COMMENT";
+  case Tag::LSTR: return "LSTR";
+  case Tag::INTEGER: return "INTEGER";
+  case Tag::REAL: return "REAL";
+  case Tag::TRUE: return "TRUE";
+  case Tag::FALSE: return "FALSE";
+  case Tag::ASSIGN: return "ASSIGN";
+  case Tag::ADDASSIGN: return "ADDASSIGN";
+  case Tag::SUBASSIGN: return "SUBASSIGN";
+  case Tag::MULASSIGN: return "MULASSIGN";
+  case Tag::DIVASSIGN: return "DIVASSIGN";
+  case Tag::MODASSIGN: return "MODASSIGN";
+  case Tag::LSASSIGN: return "LSASSIGN";
+  case Tag::RSASSIGN: return "RSASSIGN";
+  case Tag::ANDASSIGN: return "ANDASSIGN";
+  case Tag::EDASSIGN: return "EDASSIGN";
+  case Tag::ORASSIGN: return "ORASSIGN";
+  case Tag::ADDADD: return "ADDADD";
+  case Tag::SUBSUB: return "SUBSUB";
+  case Tag::ADD: return "ADD";
+  case Tag::SUB: return "SUB";
+  case Tag::MUL: return "MUL";
+  case Tag::DIV: return "DIV";
+  case Tag::MOD: return "MOD";
+  case Tag::LS: return "LS";
+  case Tag::RS: return "RS";
+  case Tag::UNIAND: return "UNIAND";
+  case Tag::BITED: return "BITED";
+  case Tag::BITOR: return "BITOR";
+  case Tag::BITNOT: return "BITNOT";
+  case Tag::EQ: return "EQ";
+  case Tag::NE: return "NE";
+  case Tag::LT: return "LT";
+  case Tag::GT: return "GT";
+  case Tag::LE: return "LE";
+  case Tag::GE: return "GE";
+  case Tag::AND: return "AND";
+  case Tag::OR: return "OR";
+  case Tag::NOT: return "NOT";
+  case Tag::SPL: return "SPL";
+  case Tag::SPR: return "SPR";
+  case Tag::MPL: return "MPL";
+  case Tag::MPR: return "MPR";
+  case Tag::LPL: return "LPL";
+  case Tag::LPR: return "LPR";
+  case Tag::COMMA: return "COMMA";
+  case Tag::SEMICOLON: return "SEMICOLON";
+  case Tag::COLON: return "COLON";
+  case Tag::CONDITION: return "CONDITION";
+  case Tag::POINT: return "POINT";
+  case Tag::ARROW: return "ARROW";
+  case Tag::AUTO: return "AUTO";
+  case Tag::BREAK: return "BREAK";
+  case Tag::CASE: return "case";
+  case Tag::CHAR: return "CHAR";
+  case Tag::CONST: return "CONST";
+  case Tag::CONTINUE: return "CONTINUE";
+  case Tag::DEFAULT: return "DEFAULT";
+  case Tag::DO: return "DO";
+  case Tag::DOUBLE: return "DOUBLE";
+  case Tag::ELSE: return "ELSE";
+  case Tag::ENUM: return "ENUM";
+  case Tag::EXTERN: return "EXTERN";
+  case Tag::FLOAT: return "FLOAT";
+  case Tag::FOR: return "FOR";
+  case Tag::GOTO: return "GOTO";
+  case Tag::IF: return "IF";
+  case Tag::INT: return "INT";
+  case Tag::LONG: return "LONG";
+  case Tag::REGISTER: return "REGISTER";
+  case Tag::RETURN: return "return";
+  case Tag::SHORT: return "SHORT";
+  case Tag::SIGNED: return "SIGNED";
+  case Tag::SIZEOF: return "SIZEOF";
+  case Tag::STATIC: return "STATIC";
+  case Tag::STRUCT: return "STRUCT";
+  case Tag::SWITCH: return "SWITCH";
+  case Tag::TYPEDEF: return "TYPEDEF";
+  case Tag::UNION: return "UNION";
+  case Tag::UNSIGNED: return "UNSIGNED";
+  case Tag::VOID: return "VOID";
+  case Tag::VOLATILE: return "VOLATILE";
+  case Tag::WHILE: return "WHILE";
+  case Tag::PARSEEND: return "$$";
+  }
+}
